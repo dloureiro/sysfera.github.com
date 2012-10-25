@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+.pages {
+	background-image: linear-gradient(left, rgb(234, 230, 209) 32%,
+		rgb(251, 251, 251) 66% );
+	background-image: -o-linear-gradient(left, rgb(234, 230, 209) 32%,
+		rgb(251, 251, 251) 66% );
+	background-image: -moz-linear-gradient(left, rgb(234, 230, 209) 32%,
+		rgb(251, 251, 251) 66% );
+	background-image: -webkit-linear-gradient(left, rgb(234, 230, 209) 32%,
+		rgb(251, 251, 251) 66% );
+	background-image: -ms-linear-gradient(left, rgb(234, 230, 209) 32%,
+		rgb(251, 251, 251) 66% );
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0.32, rgb(234,
+		230, 209) ), color-stop(0.66, rgb(251, 251, 251) ) );
+	height: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	margin: 1px;
+	text-align: right;
+	border-left: 1px;
+	border-bottom: 1px;
+	border-top: 1px;
+	border-right: 0px;
+	border-style: solid;
+	border-color: #de902c;
+	display:block;
+}
+
+.projectPagesList{
+	margin-bottom:0px;
+}

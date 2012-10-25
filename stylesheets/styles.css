@@ -817,10 +817,13 @@ small {
 
 nav {
   width: 230px;
-  position: fixed;
-  top: 220px;
+  float:left;
+  /*position: fixed;*/
+  top: 200px;
   left: 50%;
-  margin-left: -580px;
+  margin-left:auto;
+  margin-right:30px;
+  /*margin-left: 80px;*/
   text-align: right;
 }
 nav ul {
@@ -851,11 +854,13 @@ nav ul a:hover {
 }
 
 footer {
-  width: 180px;
-  position: fixed;
+  width: 600px;
+  /*position: relative;*/
   left: 50%;
-  margin-left: -530px;
+  margin: auto 0px 0px 50px ;
+  /*margin-left: -530px*/
   bottom: 20px;
+  display:block;
   text-align: right;
   line-height: 16px;
 }

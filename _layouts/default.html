@@ -1,0 +1,63 @@
+---
+title: Home of SysFera Open Source technologies
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/styles.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/style_navigation.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>SysFera</h1>
+        <p>SaaS made easy. At last.</p>
+      </header>
+
+	<div id="banner">
+		<span id="logo"></span><a href="{{site.baseurl}}/index.html"
+			class="button"><strong>Home</strong></a> <a href="https://github.com/SysFera"
+			class="button fork"><strong>View On GitHub</strong></a>
+	</div>
+	<!-- end banner -->
+<nav>
+			<h2>SysFera projects</h2>
+			<ul class="projectList">
+				{% for category in site.categories %}
+				<li><a href="{{site.baseurl}}/{{category | first}}.html" class="pages">{{category | first}}</a></li> 
+				<ul class="projectPagesList">
+				{% assign myCategory = {{category | first}} %}
+					{% for post in site.posts reversed %}
+					{% if post.categories contains myCategory %}
+					<li><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a></li> 
+					{% endif %} 
+					{% endfor %}
+				</ul>
+				{% endfor %}
+			</ul>
+		</nav>
+	<div class="wrapper">
+		
+		{{content}}
+		<footer>
+			<p>
+				<small>Hosted on GitHub Pages &mdash; Theme by <a
+					href="http://twitter.com/#!/michigangraham">mattgraham</a></small>
+			</p>
+		</footer>
+	</div>
+	<!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>

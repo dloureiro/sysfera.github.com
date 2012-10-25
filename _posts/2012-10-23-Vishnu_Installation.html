@@ -1,0 +1,53 @@
+--- 
+title : Install & Launch
+categories : vishnu
+permalink : /vishnu/installLaunch.html
+layout : default
+---
+	<section>
+	<h3>Installation and launching</h3>
+	<h4>Requirements</h4>
+	<p>VISHNU can be installed on Linux systems only (preferably Debian 
+	distributions), and requires the following software:
+	<ul>
+		<li>Boost C++ libraries (1.46.1 or greater)</li>
+		<li>OmniORB (4.1.4 or greater)</li>
+		<li>EMF4CPP (0.0.2 patched - see debian packages below - or greater)</li>
+		<li>SSH</li>
+		<li>PostGreSQL (8.0 or greater) or MySQL (5.0 or greater)</li>
+		<li>DIET version 2.8 + the log service module associated</li>
+		<li>On all hosts providing task mgmt services (TMS module):
+		<ul>
+			<li>Torque API v3.2.6</li>
+			<li>IBM LoadLeveler 3.5.1.14</li>
+			<li>SLURM v2.2.1 (ou 2.2.7)</li>
+			<li>LSF 7.0.6.134609</li>
+			<li>OR Grid Engine 2011.11</li>
+		</ul>
+		</li>
+	</ul>
+	<h4>Installation procedures</h4>
+	<p>Please refer to the corresponding pages:
+	<ul>
+	<li><a href="#">Installation from source</a></li>
+	<li><a href="#">Installation from debian packages</a></li>	
+	<li><a href="#">Installtion from rpm packages</a></li>
+	</ul>
+	</p>
+	<h4>Launching the VISHNU platform</h4>
+	<p>VISHNU is a distributed system and can therefore be installed on several 
+	systems as well as on a single system. When using several systems, the choice 
+	of which services to deploy on each system is dependent on the characteristics 
+	of the systems and of the network.</p>
+	<p>Here is the list of processes that must be started to deploy all VISHNU 
+	services (see also the "VISHNU Administrator's guide" in the Documentation 
+	section):
+	<ul>
+		<li>Database instance: either a MySQL or PostgreSQL database</li>
+		<li>CORBA OmniNames process (omniNames)</li>
+		<li>DIET Master agent process (dietAgent)</li>
+		<li>DIET LogCentral process (LogCentral)</li>
+		<li>All VISHNU SeD processes (umssed, tmssed, imssed, fmssed)</li>
+	</ul>
+	</p>
+	</section>
