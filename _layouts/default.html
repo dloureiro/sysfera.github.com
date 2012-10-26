@@ -35,7 +35,7 @@ title: Home of SysFera Open Source technologies
 			<h2>SysFera projects</h2>
 			<ul class="projectList">
 				{% for category in site.categories %}
-				<li><a href="{{site.baseurl}{{category | first}}.html" class="pages">{{category | first}}</a></li> 
+				<li><a href="{{site.baseurl}}{{category | first}}.html" class="pages">{{category | first}}</a></li> 
 				<ul class="projectPagesList">
 				{% assign myCategory = {{category | first}} %}
 					{% for post in site.posts reversed %}
