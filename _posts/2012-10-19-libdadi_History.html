@@ -7,7 +7,87 @@ layout : default
 	<section>
 	<h3>History</h3>
 	<dl>
-		<dt>VX.X.X (DD/MM/YYYY)</dt>
-		<dd>Text</dd>
+		<dt>V0.5.1 (12/30/2011)</dt>
+		<dd><ul>
+			<li>Features:
+			<ul>
+		<li>Registry: new method: removePath</li>
+		<li>cori: add optional boolean parameter to CoriMgr constructor to load of not default plugins paths</li>
+		<li>cori: install plugins in /libexec/cori</li>
+		<li>cori: handle empty requests, no requests, sends all metrics available</li>
+		<li>SigarCori: sigar handle should not be initialized in an assert macro</li>
+	 	<li>Improved doc</li>
+	 	<li>Removed a todo</li>
+	 	<li>update env options management</li>
+	 	<li>updated Options::add_option function, add missing parameter</li>
+	 	<li>Replaced licence by license</li>
+	 	<li>Improved doc. Added a few fixmes on exceptions</li>
+	 	<li>Removed debug prints on cout</li>
+	 	<li>Improved documentation</li>
+	 	<li>documentation: add some bits</li>
+	 	<li>activated DADIConfigFileTests</li>
+	 	<li>Added support for size in GB.</li>
+	 	<li>Documented getAttrList. Added a few more examples.</li>
+	 	<li>More explicit documentation about help()</li>
+	 	<li>added author</li>
+	 	<li>Only get requested metrics</li>
+	 	<li>Support INFO format. Throws an exception when parsing problems occured</li>
+	 	<li>Added a new exception: ParsingAttributeError</li>
+	 	<li>Config: missing break</li>
+	 	<li>Set ICori as a virtual descendant of IPlugin</li>
+	 	<li>SigarCori: check status return by sigar calls before filling the response</li>
+	 	<li>Change static initialisation of strings using explicit copy constructor</li>
+	 	<li>plugins: attach properly PluginInfo to plugins instances</li>
+	 	<li>samples: add simple-cori to showcase CoriMgr use</li>
+	 	<li>CoRI: import CoRI interface and first CoRI plugin (Sigar)</li>
+	 	<li>Plugins: now load metadata properly (previous bug) add Registry::listPluginsByInterface method to list plugins loaded remove dead code</li>
+	 	<li>Config: add new helper setPropertySeq (allows to sequences properties) automatically use default help callback (no need to set it manually) remove dead code remove useless operator<< </li>
+	 	<li>Config: add new methods add/add_seq/get_seq</li>
+	 	<li>Attributes: add free function str() that serialize an Attributes</li>
+	 	<li>Attributes: add merge operation</li>
+	 	<li>Attributes: add template method addAttr (add new node instead of updating existing node unlike putAttr)</li>
+	 	</ul></li>
+	<li>Bug Fix:
+	<ul>
+		<li>Fixed test on = operator</li>
+	 	<li>Fixed a bug in = operator</li>
+		<li>Attributes: fixup getAttrList method, it now takes the full key Attributes/Cori tests were also fixed up accordingly</li>
+		<li>Registry: various fixes</li>
+	 	<li>Tests: fix Cori test suite</li>
+	 	<li>Options: fix unimplemented method Options::addSwitch(std::string, std::string)</li>
+		<li>Commandline framework does not throw exceptions when required option is missing</li>
+		<li>Plugins: fix paths in installed plugins manifest</li>
+		<li>Cori: fix bugs</li>
+		<li>Fixed cpplint issues</li>
+	 	<li>Removed cpplint errors</li>
+	 	<li>Explicitely use FORMAT_XML instead of 0</li>
+	 	<li>samples: various bug fixes</li>
+	 	<li>Attributes: fix template method getAttrList</li>
+	 	<li>Cori: fix build on OS X</li>
+	 	<li>Attributes: misplaced catch bad::lexical_cast</li>
+	 	<li>SigarCori plugin: missing breaks in switch from SigarCori::get_loadavg</li>
+	 	<li>cmake: fix plugins.cmake to support multiple sources plugin</li>
+	 	<li>Attributes: fix getAttrList when ptree::data_type differs from Sequence::value_type</li>
+	 	<li>A few cpplint errors corrections. Use the quoted form for includes within the libdadi project</li>
+	 	<li>Fixed a bug in timestamp archive strategy</li>
+	 	</ul>
+	 	</li>
+	<li>Source code organization:
+	<ul>
+		<li>Added Eclipse IDE project files</li>
+		<li>tests: test that commandline raises an exception when a required option is not given</li>
+		<li>Improved tests on bool operator</li>
+	 	<li>Added tests on PluginInfo</li>
+		<li>Removed tests on file names, as we cannot guaranty the order in which the files are found</li>
+		<li>removed unused variables</li>
+		<li>Updated README with exceptions & CoRI</li>
+	 	<li>Display DADI_INSTALL_DIR</li>
+	 	<li>use reinterpret_cast instead of C casts</li>
+	 	<li>Updated UseLATEX.cmake</li>
+	 	<li>Tests: a lot have been added (rotation and archive strategies, CoRI, str method, attr_merge, equal operator, merge, loadAttr, constructor, serialization/deserialization, compression methods)</li>
+	 	<li>enforce SysFera coding standards (cpplint warnings)</li>
+	 	<li>Beginning of tests for getAttrList</li>
+	 </ul></li>
+		</ul></dd>
 </dl>
 	</section>

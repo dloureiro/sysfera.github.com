@@ -7,7 +7,21 @@ layout : default
 	<section>
 	<h3>Installation</h3>
 	<h4>Requirements</h4>
-	<p>Soon.</p>
+	<p>libdadi can be installed on almost every system (if you find one we don't support, please provide patches :), and requires the following software:
+	<ul>
+		<li>CMake (2.8.4 or greater)</li>
+		<li>Boost C++ libraries (1.46.1 or greater)</li>
+		<li>Sigar library (1.6.2 or greater)</li>
+	</ul>
+	</p>
 	<h4>Installation procedure</h4>
-	<p>Soon.</p>
+	<p>libdadi is using the CMake build system.</p>
+	<p>Here is the list of commands to run in order to compile and install libdadi form the main directory:</p>
+	{% highlight bash %}
+$ mkdir build
+$ mkdir target
+$ cd build
+$ ccmake .. -DCMAKE_INSTALL_PREFIX=$(pwd)/../target -DSIGAR_LIBRARIES=path_to_sigar_library -DSIGAR_INCLUDE_DIR=path_to_sigar_include_dir
+$ make && make install
+	{% endhighlight %}
 	</section>
