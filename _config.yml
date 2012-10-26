@@ -1,7 +1,6 @@
 safe:        false
 auto:        true
 server:      false
-server_port: 4000
 baseurl:    /
 url: http://sysfera.github.com
 
