@@ -26,7 +26,7 @@ title: Home of SysFera Open Source technologies
       </header>
 
 	<div id="banner">
-		<span id="logo"></span><a href="{{site.baseurl}}/index.html"
+		<span id="logo"></span><a href="{{site.baseurl}}index.html"
 			class="button"><strong>Home</strong></a> <a href="https://github.com/SysFera"
 			class="button fork"><strong>View On GitHub</strong></a>
 	</div>
@@ -35,12 +35,12 @@ title: Home of SysFera Open Source technologies
 			<h2>SysFera projects</h2>
 			<ul class="projectList">
 				{% for category in site.categories %}
-				<li><a href="{{site.baseurl}}/{{category | first}}.html" class="pages">{{category | first}}</a></li> 
+				<li><a href="{{site.baseurl}{{category | first}}.html" class="pages">{{category | first}}</a></li> 
 				<ul class="projectPagesList">
 				{% assign myCategory = {{category | first}} %}
 					{% for post in site.posts reversed %}
 					{% if post.categories contains myCategory %}
-					<li><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a></li> 
+					<li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li> 
 					{% endif %} 
 					{% endfor %}
 				</ul>
