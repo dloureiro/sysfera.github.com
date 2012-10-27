@@ -1,7 +1,7 @@
 safe:        false
 auto:        true
 server:      false
-baseurl:    /
+baseurl:    
 url: http://sysfera.github.com
 
 source:      .
