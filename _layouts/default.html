@@ -7,9 +7,9 @@ title: Home of SysFera Open Source technologies
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{page.title}}</title>
-    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/styles.css">
-    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/style_navigation.css">
-    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/style_navigation.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
@@ -26,7 +26,7 @@ title: Home of SysFera Open Source technologies
       </header>
 
 	<div id="banner">
-		<span id="logo"></span><a href="{{site.baseurl}}/index.html"
+		<span id="logo"></span><a href="/index.html"
 			class="button"><strong>Home</strong></a> <a href="https://github.com/SysFera"
 			class="button fork"><strong>View On GitHub</strong></a>
 	</div>
@@ -35,12 +35,12 @@ title: Home of SysFera Open Source technologies
 			<h2>SysFera projects</h2>
 			<ul class="projectList">
 				{% for category in site.categories %}
-				<li><a href="{{site.baseurl}}/{{category | first}}.html" class="pages">{{category | first}}</a></li> 
+				<li><a href="/{{category | first}}.html" class="pages">{{category | first}}</a></li> 
 				<ul class="projectPagesList">
 				{% assign myCategory = {{category | first}} %}
-					{% for post in site.posts reversed %}
+					{% for post in site.posts %}
 					{% if post.categories contains myCategory %}
-					<li><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a></li> 
+					<li><a href="/{{ post.url }}">{{ post.title }}</a></li> 
 					{% endif %} 
 					{% endfor %}
 				</ul>
