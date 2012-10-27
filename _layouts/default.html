@@ -31,30 +31,40 @@ title: Home of SysFera Open Source technologies
 			class="button fork"><strong>View On GitHub</strong></a>
 	</div>
 	<!-- end banner -->
-<nav>
-			<h2>SysFera projects</h2>
-			<ul class="projectList">
-				{% for category in site.categories %}
-				<li><a href="/{{category | first}}.html" class="pages">{{category | first}}</a></li> 
-				<ul class="projectPagesList">
-				{% assign myCategory = {{category | first}} %}
-					{% for post in site.posts %}
-					{% if post.categories contains myCategory %}
-					<li><a href="/{{ post.url }}">{{ post.title }}</a></li> 
-					{% endif %} 
-					{% endfor %}
-				</ul>
-				{% endfor %}
-			</ul>
-		</nav>
+	<nav>
+	<h2>SysFera projects</h2>
+	<ul class="projectList">
+
+		<li><a href="/libdadi.html" class="pages">libdadi</a>
+			<ul class="projectPagesList">
+				<li><a href="/libdadi/authors.html">Authors</a></li>
+				<li><a href="/libdadi/history.html">History</a></li>
+				<li><a href="/libdadi/license.html">License</a></li>
+				<li><a href="/libdadi/download.html">Downloads</a></li>
+				<li><a href="/libdadi/documentation.html">Documentation</a></li>
+				<li><a href="/libdadi/install.html">Install</a></li>
+				<li><a href="/libdadi/issueTracking.html">Issue Tracking</a></li>
+			</ul></li>
+		<li><a href="/vishnu.html" class="pages">vishnu</a>
+			<ul class="projectPagesList">
+				<li><a href="/vishnu/authors.html">Authors</a></li>
+				<li><a href="/vishnu/history.html">History</a></li>
+				<li><a href="/vishnu/license.html">License</a></li>
+				<li><a href="/vishnu/download.html">Downloads</a></li>
+				<li><a href="/vishnu/documentation.html">Documentation</a></li>
+				<li><a href="/vishnu/installLaunch.html">Install</a></li>
+				<li><a href="/vishnu/issueTracking.html">Issue Tracking</a></li>
+			</ul></li>
+	</ul>
+	</nav>
 	<div class="wrapper">
-		
+
 		{{content}}
 		<footer>
-			<p>
-				<small>Hosted on GitHub Pages &mdash; Theme by <a
-					href="http://twitter.com/#!/michigangraham">mattgraham</a></small>
-			</p>
+		<p>
+			<small>Hosted on GitHub Pages &mdash; Theme by <a
+				href="http://twitter.com/#!/michigangraham">mattgraham</a></small>
+		</p>
 		</footer>
 	</div>
 	<!--[if !IE]><script>fixScale(document);</script><![endif]-->
