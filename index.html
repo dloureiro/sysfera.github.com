@@ -16,5 +16,11 @@ layout: default
 		low-coupled applications.</li>
 		<li><a href="/webboardApplicationScripts.html">WebBoard Application Scripts</a> : set of application scripts used in the WebBoard
 		to provide access to distributed and remote applications throught the WeBoard</li>
+	</ul>
+	<h4>Latest Updates</h4>
+	<ul>
+	{% for post in site.categories["news"] limit: 10 %}
+		<li>[{{ post.date | format_date }}] | <u>{{ post.category }}</u> : <a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
 	</ul>	
 </section>
