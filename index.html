@@ -20,7 +20,7 @@ layout: default
 	<h4>Latest Updates</h4>
 	<ul>
 	{% for post in site.categories["news"] limit: 10 %}
-		<li>[{{ post.date | format_date }}] | <u>{{ post.category }}</u> : <a href="{{ post.url }}">{{ post.title }}</a></li>
+		<li>[{{ post.date | date_to_string }}] | <u>{{ post.category }}</u> : <a href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 	</ul>	
 </section>
