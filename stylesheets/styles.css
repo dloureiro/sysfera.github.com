@@ -1013,3 +1013,7 @@ footer {
     width: auto;
   }
 }
+
+.news{
+	border-bottom: thin gray;
+}
