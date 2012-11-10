@@ -1015,6 +1015,5 @@ footer {
 }
 
 .news{
-	border-bottom-width:1px;
-	border-bottom-color:gray;
+	border-bottom:1px solid gray;
 }
