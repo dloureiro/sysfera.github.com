@@ -1034,7 +1034,7 @@ footer {
 	position:absolute;
 	text-align:right;
 	right:-130px;
-	top:-10px;
+	top:0px;
 	border:solid 1px #DEDEDE;
 	background:white;
 	padding:8px;
