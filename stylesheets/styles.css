@@ -1042,7 +1042,6 @@ footer {
 
 .post-sharing:hover ul { display: block; }
 
-#post-share{
-	list-style-type:none;
-	text-align:right;	
+.post-sharing:hover ul li{
+	list-style-type:none;	
 }
