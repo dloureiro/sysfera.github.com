@@ -1017,3 +1017,11 @@ footer {
 .news{
 	border-bottom:1px solid gray;
 }
+
+.last-download{
+	border:solid 1px #DEDEDE;
+	background:#F49F15 url(/images/star-24.png) 8px 6px no-repeat;
+	color:#222222;
+	padding:4px;
+	text-align:center;
+}
