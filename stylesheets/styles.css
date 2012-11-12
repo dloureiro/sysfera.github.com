@@ -1041,7 +1041,15 @@ footer {
 	
 }
 
+.tw{
+	padding-top:2px;
+}
+
+.gplus{
+	padding-top:2px;
+}
+
 .share-li{
-	width: 110px;
+	width: 80px;
 	height: 16px;
 }
