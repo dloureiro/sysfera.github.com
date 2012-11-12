@@ -1032,8 +1032,10 @@ footer {
 
 .post-sharing{
 	position:absolute;
+	text-align:right;
 	right:30px;
 	border:solid 1px #DEDEDE;
+	width:120px;
 }
 
 .post-sharing ul{
@@ -1045,7 +1047,7 @@ footer {
 	padding-left: 0;
 	margin-left: 0;
 	border-bottom: 1px solid gray;
-	width: 200px;
+	width: 120px;px;
 }
 
 .post-sharing:hover ul li{
