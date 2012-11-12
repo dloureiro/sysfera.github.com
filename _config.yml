@@ -38,22 +38,23 @@ coderay:
   coderay_tab_width: 4
   coderay_bold_every: 10
   coderay_css: style
-  
-sharing :
-  provider : all
-  twitter :
-    size :
-    via : SysFera
-    count :
-  facebook :
-    appid : 348058138624352
-    layout : button_count
-    font :
-    faces : false
-    width : 90
-  googleplus :
-    size : medium
-    width :
-    annotation : bubble
-  linkedin :
-    counter : right
+
+JB :
+  sharing :
+    provider : all
+    twitter :
+      size :
+      via : SysFera
+      count :
+    facebook :
+      appid : 348058138624352
+      layout : button_count
+      font :
+      faces : false
+      width : 90
+    googleplus :
+      size : medium
+      width :
+      annotation : bubble
+    linkedin :
+      counter : right
