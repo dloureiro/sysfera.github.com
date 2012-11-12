@@ -1030,6 +1030,11 @@ footer {
 	color:white;
 }
 
+.post-sharing{
+	position:fixed;
+	right:10px;
+}
+
 .post-sharing ul{
 	display: none;
 }
@@ -1039,14 +1044,5 @@ footer {
 .post-share li{
 	list-style-type: none;
 	text-align:right;
-	border:solid 1px #DEDEDE;
-	
-}
-
-.tw{
-	margin-top:2px;
-}
-
-.gplus{
-	margin-top:2px;
+	border:solid 1px #DEDEDE;	
 }
