@@ -1031,8 +1031,9 @@ footer {
 }
 
 .post-sharing{
-	position:fixed;
-	right:10px;
+	position:absolute;
+	right:30px;
+	border:solid 1px #DEDEDE;
 }
 
 .post-sharing ul{
