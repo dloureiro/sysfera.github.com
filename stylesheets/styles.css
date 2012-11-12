@@ -1031,7 +1031,7 @@ footer {
 }
 
 .post-sharing{
-	position:fixed;
+	position:relative;
 	right:10px;
 }
 
