@@ -1031,13 +1031,7 @@ footer {
 }
 
 .post-sharing{
-	margin-right:0px;
-	margin-left:auto;
-	width:auto;
-}
-
-.post-sharing ul{
-	border:solid 2px #DEDEDE;
+	right: 10px;
 }
 
 .post-share li{
