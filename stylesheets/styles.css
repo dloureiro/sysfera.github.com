@@ -1029,3 +1029,17 @@ footer {
 .last-download a{
 	color:white;
 }
+
+.post-sharing{
+	margin-right:0px;
+	margin-left:auto;
+	width:150px;
+}
+
+.post-sharing ul{
+	border:solid 2px #DEDEDE;
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+	text-align:right;
+}
