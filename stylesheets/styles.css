@@ -1059,8 +1059,5 @@ footer {
 	list-style:none;
 	margin: 0;
 	padding: 0.25em;
-	display:block;	
-	position:absolute;
 	width:120px;
-	right:0px;
 }
