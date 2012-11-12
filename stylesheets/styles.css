@@ -1030,14 +1030,16 @@ footer {
 	color:white;
 }
 
-.post-sharing{
-	text-align:right;
+.post-sharing ul{
+	display: none;
 }
 
+.post-sharing:hover ul { display: block; }
+
 .post-share li{
-	display: inline;
 	list-style-type: none;
 	text-align:right;
+	border:solid 1px #DEDEDE;
 	
 }
 

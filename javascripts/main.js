@@ -51,3 +51,9 @@ fixScale = function(doc) {
     doc[addEvent](type, fix, true);
   }
 };
+
+$(document).ready(function(){
+		$('post-sharing').hover(
+			function() { $('ul', this).css('display', 'block'); },
+			function() { $('ul', this).css('display', 'none'); });
+	});
