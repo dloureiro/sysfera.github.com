@@ -1033,7 +1033,8 @@ footer {
 .post-sharing{
 	position:absolute;
 	text-align:right;
-	right:30px;
+	right:-130px;
+	top:-20px;
 	border:solid 1px #DEDEDE;
 	background:white;
 	padding:8px;
