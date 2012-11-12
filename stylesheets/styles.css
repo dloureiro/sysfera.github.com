@@ -1035,13 +1035,13 @@ footer {
 	text-align:right;
 	right:30px;
 	border:solid 1px #DEDEDE;
-	background:white url(/images/arrow-branch-byr-24.png) 8px 2px no-repeat;;
+	background:white url(/images/arrow-branch-byr-24.png) 8px no-repeat;;
 }
 
 .post-sharing span{
 	display:block;
 	width:120px;
-	padding:8px;
+	padding-right:8px;
 }
 
 .post-sharing ul{
