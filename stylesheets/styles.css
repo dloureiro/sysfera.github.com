@@ -1050,11 +1050,8 @@ footer {
 	width:30px;
 }
 
-.post-sharing ul{
-	display: none;
-}
 
-.post-sharing:hover ul { 
+.post-sharing ul { 
 	display: block;
 	padding-left: 0;
 	margin-left: 0;
@@ -1062,7 +1059,7 @@ footer {
 	
 }
 
-.post-sharing:hover ul li{
+.post-sharing ul li{
 	list-style:none;
 	margin: 0;
 	padding: 0.25em;
