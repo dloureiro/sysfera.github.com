@@ -1045,6 +1045,11 @@ footer {
 	background:white url(/images/arrow-branch-byr-24.png) no-repeat;
 }
 
+#glue{
+	display:block;
+	width:30px;
+}
+
 .post-sharing ul{
 	display: none;
 }
