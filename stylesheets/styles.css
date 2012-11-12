@@ -1031,11 +1031,17 @@ footer {
 }
 
 .post-sharing{
-	right: 10px;
+	text-align:right;
 }
 
 .post-share li{
 	display: inline;
 	list-style-type: none;
 	text-align:right;
+	
+}
+
+.share-li{
+	width: 110px;
+	height: 16px;
 }
