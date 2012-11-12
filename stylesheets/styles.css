@@ -1042,8 +1042,8 @@ footer {
 
 .post-sharing:hover ul { display: block; }
 
-.share-li{
-	list-style-type: none;
+#post-share li{
+	list-style-type:none;
 	text-align:right;
 	border:solid 1px #DEDEDE;	
 }
