@@ -4,7 +4,7 @@ permalink : vishnu.html
 layout : default
 ---
 	<section>
-	<h3>What is VISHNU ?</h3>
+	<h3>What is VISHNU?</h3>
 	<p>VISHNU offers to end-users the capability of running computation tasks 
 	(jobs) on remote servers through a simple interface that offers performance 
 	and interoperability with different kind of batch scheduler softwares running
@@ -14,10 +14,9 @@ layout : default
 	of the servers and to recover automatically from server failures.</p>
 	<p>The VISHNU software consists of a client part that provides both command-line
 	 executables and C++ shared libraries for integration into an application, and
-	  a server part that is based on the DIET middleware for remote invokation of
-	   distributed services. Other user interfaces are provided on top of the C++
+	  a server part. Communications are handled by ZMQ. Other user interfaces are provided on top of the C++
 	    API using SWIG wrappers: currently it is available as Python module and 
-	    Web services server.<p>
+	    Java API.<p>
 	<p>VISHNU is a modular system where each module can be deployed individually 
 	on a server to provide a subset of all VISHNU services. For example the TMS 
 	module can be deployed on one server for providing jobs handling services, 
