@@ -1,0 +1,42 @@
+--- 
+title : The latest version of Vishnu 3.0.0 beta1 is out!
+tags : vishnu
+categories : vishnu-news news
+permalink : /vishnu/vishnu_v3.0.0beta1_is_out.html
+layout: article
+sharing: true
+---
+<p>Here is the corresponding changelog:</p>
+<ul>
+  <li>New features :
+    <ul>
+      <li>Added sample configuration files for VISHNU and Supervisord</li>
+      <li>Unified configuration files: all Vishnu daemons and clients can have the same configuration file</li>
+      <li>New documentation user/admin</li>
+      <li>Add posix-shell: you can start TMS without batch scheduler, TMS functionalities available in the shell</li>
+      <li>WS are abandoned, they won't be maintained anymore. Related files and
+	directories have been removed.</li>
+      <li>Java APIs are available</li>
+      <li>Vishnu does not rely on DIET anymore. All communications are handled by
+	ZMQ. SeDs only require 1 open port to communicate (easier for
+	deployments)</li>
+      <li>TMS now uses FMS to send input files to jobs. You can use remote files
+	as input files.</li>
+      <li>A new daemon has been introduced: the dispatcher which serves as a proxy
+	between clients and SeDs</li>
+    </ul>
+  <li>Bug fixes and improvements :
+    <ul>
+      <li>Fixed several memory leaks</li>
+      <li>Fixed bad boost version in CMakeLists</li>
+      <li>Fixed bugzilla #341 - Rename of FMS commands using POSIX name</li>
+      <li>Several bugs closed: #449, #452, #453, #225, #409, #344, #291, #289,
+	#288, #226, #292, #295, #441, #233, #341, #386, #447, #436, #446  </li>
+    </ul>
+  </li>
+</ul>
+<p>You can download the tarball containing the sources on the dedicated 
+  <a href="/vishnu/download.html">Vishnu download Page</a> or directly from 
+  the following link : 
+  <a href="www.sysfera.com/download/vishnu/vishnu_v3.0.0beta1.tgz">Vishnu 3.0.0 beta1</a>
+</p>
