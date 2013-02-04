@@ -1,0 +1,60 @@
+--- 
+title : The latest version of Vishnu 3.0.0 beta2 is out!
+tags : vishnu
+categories : vishnu-news news
+permalink : /vishnu/vishnu_v3.0.0beta2_is_out.html
+layout: article
+sharing: true
+---
+<p>Here is the corresponding changelog:</p>
+<ul>
+  <li>New features:
+    <ul>
+      <li>
+        Added beta support for submitting jobs to a Cloud, using DeltaCloud
+        (tested with OpenStack only). Currently, only the Vishnu user is
+        used, there is no user switch during submission. The credentials
+        need to be provided to VISHNU though an configuration file,
+        options, or environment variables.
+      </li>
+      <li>
+        Automtests have been updated: they do not launch the Vishnu platform,
+        they use an already deployed one.
+      </li>
+    </ul>
+  <li>Bug fixes and improvements:
+    <ul>
+      <li>
+        The compilation process has been updated: you can now compile the
+        client CLI and the servers separately
+      </li>
+      <li>
+        Files necessary to build vishnu java library have been included in this
+        repository. Currently there is no doc for this, see
+        scripts/ALL_prepareScript.sh if you want the lib.
+      </li>
+      <li>
+        fixed a bug where signal-interrupted zmq calls (EINTR) were not
+        handled properly
+      </li>
+      <li>
+        fixed a bug on the "POSIX" backend where the wallclock time was not
+        correctly handled which caused submission scripts to sometimes be
+        deleted before being executed.
+      </li>
+    </ul>
+  </li>
+  <li>Warnings:
+    <ul>
+      <li>
+        The database needs to be updated using scripts in
+        core/database/database_update_addvminfo_*.sql
+      </li>
+    </ul>
+  </li>
+</ul>
+<p>You can download the tarball containing the sources on the dedicated 
+  <a href="/vishnu/download.html">Vishnu download Page</a> or directly from 
+  the following link: 
+  <a href="http://www.sysfera.com/download/vishnu/vishnu_v3.0.0beta1.tgz">Vishnu 3.0.0 beta1</a>
+</p>
